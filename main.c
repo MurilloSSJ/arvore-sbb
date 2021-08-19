@@ -6,6 +6,7 @@ void main(){
     int x;
     int  vetor[10];
     int i, j, k, n;
+    n=5;
     Inicializa(&Dicionario);
     for(i=0;i<10;i++){
         vetor[i] = i+1;
@@ -14,5 +15,8 @@ void main(){
         x = vetor[i];
         Insere(x, &Dicionario);
         printf("Inseriu chave: %d\n", x);
-  }
+    }
+    Retira(5,&Dicionario);
+
+
 }
